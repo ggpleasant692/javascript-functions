@@ -12,6 +12,12 @@ const collectEmployees = function() {
     const lastName = prompt("Enter last name:");
     const salary = parseFloat(prompt('Enter salary:'));
 
+      // Validate names
+      if (!firstName || !lastName) {
+        console.error("First name and last name cannot be empty.");
+        continue;
+      }
+     //create employee object and add to array
     const employee = {
       firstName: firstName,
       lastName: lastName,
@@ -35,7 +41,7 @@ const displayAverageSalary = function(employeesArray) {
     totalSalary += employeesArray[i].salary;
   }
   let averageSalary = totalSalary / employeesArray.length;
-  console.log("Average Salary: $" + averageSalary.toFixed(2));
+  console.log(`Random Employee: ${randomEmployee.firstName} ${randomEmployee.lastName} $${randomEmployee.salary.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
 }
 
 // Select a random employee
