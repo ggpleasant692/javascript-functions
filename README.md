@@ -22,3 +22,10 @@ In this project, I gained hands-on experience with several fundamental JavaScrip
 **Links to Deployed Site**
 https://ggpleasant692.github.io/javascript-functions/
 
+### Screenshot
+```md
+ ![alt text](assets/images/screenshot.png)
+ ```
+
+
+ ![alt text](assets/images/screenshot.png)
