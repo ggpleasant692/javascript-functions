@@ -41,7 +41,7 @@ const displayAverageSalary = function(employeesArray) {
     totalSalary += employeesArray[i].salary;
   }
   let averageSalary = totalSalary / employeesArray.length;
-  console.log(`Random Employee: ${randomEmployee.firstName} ${randomEmployee.lastName} $${randomEmployee.salary.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
+  console.log("Average Salary: $" + averageSalary.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
 }
 
 // Select a random employee
